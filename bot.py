@@ -10,7 +10,7 @@ def handle_voice(message):
         bot.delete_message(message.chat.id, message.message_id)
         bot.send_message(
             message.chat.id,
-            f"{message.from_user.first_name}, придержи коней, ковбой! MAX 15sec"
+            f"{message.from_user.first_name}, голосовые сообщения должны быть не длиннее 15 секунд!"
         )
 
 bot.polling()
